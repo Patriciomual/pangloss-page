@@ -4,7 +4,6 @@
       <v-app-bar
         color="#6A76AB"
         dark
-        prominent
         style="border-radius: 0px"
         width="100%"
         src="https://firebasestorage.googleapis.com/v0/b/trafla-24d65.appspot.com/o/trafla%2Fplanet.png?alt=media&token=f01b1458-30a3-4fc6-8918-bd286ec96194"
@@ -13,12 +12,12 @@
         <template v-slot:img="{ props }">
           <v-img
             v-bind="props"
-            gradient="to top right, rgba(144,21,21,10), rgba(7,6,169,.5)"
+            gradient="to top right, rgba(0,0,0,1), rgba(168,6,7,.7)"
           ></v-img>
         </template>
           
           <h1 class="letra" style="margin:1%">PANGLOSS</h1><br>
-          <span style="font-size:14px;margin-top:3.5%">v0.1.2</span>
+          <span style="font-size:14px;margin-top:1.3%">v0.1.2</span>
           
           <br><br>
       </v-app-bar>
@@ -52,7 +51,7 @@
               <pre>npm i pan-gloss</pre>
             </v-card> <br>
             <h2 class="letra" style="text-align:left">Quick Start</h2> <br>
-            <p  class="letra1">Lo primero que necesitas despues de instalar el componente en tu proyecto es importarlo en <mark>main.js</mark>. Ésta es la forma
+            <p  class="letra1">Lo primero que necesitas después de instalar el componente en tu proyecto es importarlo en <mark>main.js</mark>. Esta es la forma
               global, ya que posteriormente no será necesario importar nada en el componente vue que deciemos utilizar, por ende tal como se puede deducir,
             si existe una forma global de instalación existe una manera local. <br><br> Revisemos la fomar global:</p> <br>
             <v-card outlined class="letra-caja" style="background-color: #f4f4ed">
@@ -66,7 +65,7 @@
               </pre>
             </v-card> <br>
             <p class="letra1">
-              De ésta manera el componente queda listo para ser usado de la forma <mark> &lt;pangloss&gt;&lt;/pangloss&gt; </mark>
+              De esta manera el componente queda listo para ser usado de la forma <mark> &lt;pangloss&gt;&lt;/pangloss&gt; </mark>
             </p><br>
             <p class="letra1">
               En el template del componente .vue que estamos utilizando:
@@ -82,8 +81,8 @@
             </v-card> <br>
             <p class="letra1">
               Vemos como el componente está haciendo uso de algunas directivas y recibiendo algunos datos, esto se debe principalmente a la naturaleza del componente,
-              ya que probablemente solo deba mostrarse en algunas ocaciones, como la primera vez del usuario en tu aplicación, por ejemplo, por eso es que usamos <i>v-if</i> 
-              para mostrar el componente solo cuando <i>view</i> sea <i>True</i>, entonces al mismo tiempo debemos recibir el cambio en <i>view</i> cuando se termina el tutorial y queramos dejar de mostrar
+              ya que probablemente solo se deba mostrar en algunas ocaciones, como la primera vez del usuario en tu aplicación, por eso es que usamos <i>v-if</i> 
+              para mostrar el componente solo cuando <i>view</i> sea <i>True</i>, al mismo tiempo debemos recibir el cambio en <i>view</i> cuando se termina el tutorial y queramos dejar de mostrar
               el componente. Entonces <i>finish</i> emite el booleano <i>False</i> desde el componente pangloss cuando el tutorial haya terminado, lo recibimos con la variable <i>"a"</i> y asignamos
               el valor a <i>view</i> ocultando el módulo oportunamente.
             </p><br>          
@@ -93,7 +92,7 @@
             </p><br> 
 
             <p class="letra1">
-              La forma de enviar datos al componente pangloss es por medio de un objeto con multiples propiedades que controlarán desde la apariencia hasta el contenido del tutorial. <br>
+              La forma de enviar datos al componente pangloss es por medio de un objeto con múltiples propiedades que controlarán desde la apariencia hasta el contenido del tutorial. <br>
             </p><br>   
 
 
@@ -173,7 +172,7 @@
             <p class="letra1">
               Todo el contenido de nuestro tutorial será definido en un <i>Object</i> que encontramos dentro del array <i>Content</i>. <br>
               Este <i>Array de objetos</i> será ciclado dentro de cada una de las tarjetas que se definieron gracias al ciclo de <i>Steps</i>. <br><br>
-              <mark>importante</mark> La cantidad de objetos que se defina debe ser igual que la cantidad de pasos, definidas en <i>Steps</i> para evitar errores. <br><br>
+              <mark>importante</mark> La cantidad de objetos que se defina debe ser igual que la cantidad de pasos definidas en <i>Steps</i> para evitar errores. <br><br>
             </p>
             <p class="letra1">
               <ul>
@@ -188,14 +187,14 @@
                 </li>
                 <li>
                   image : Permite incrustar la <i>url</i> de una imagen en el lado izquierdo de nuestro tutorial. <br>
-                  <i>Nota: </i>Si no se desea imagen poner <i>null</i>. <br>
+                  <i>Nota: </i>Si no se desea imagen rellenar con <i>null</i>. <br>
                 </li>
                 <li>
                   imageSize : Tamaño de la imagen.
                 </li> <br>
                 <mark>importante</mark> las propiedades descritas a continuación pueden no ser usadas si no son requeridas <i>ver segundo objeto del ejemplo</i>. <br><br>
                 <li>
-                  btnName : Permite incrustar un boton al final del texto del tutorial.
+                  btnName : Permite incrustar un botón al final del texto del tutorial.
                 </li>
                 <li>
                   btnHref : <i>Url</i> a la que redireccionará el botón.
@@ -215,10 +214,9 @@
         <p class="letra1">Revisa el código fuente:</p>
         <v-col cols="12">
           <v-card
-            class="mx-auto"
+            class="mx-auto color-tarjeta-github"
             max-width="100%"
-            style="background-color: #e5dcdc"
-            outlined
+            elevation="10"
           >
             <v-list-item three-line>
               <v-list-item-content>
@@ -287,15 +285,15 @@
               <p class="letra1" >Concepto:</p> <br>
               <p class="letra1"> 
                  <img width="50%" style="float: right;margin-top:-15%"  src="https://firebasestorage.googleapis.com/v0/b/trafla-24d65.appspot.com/o/trafla%2Fpangloss_cuerpoCompleto.gif?alt=media&token=7d5326d9-8a66-4b0a-ad5c-c1dab40d1fcb" alt="">
-                pangloss como personaje esta pensado como un viajero del espacio y el tiempo en una realidad donde los multiples universos son un hecho innegable. 
+                pangloss como personaje esta pensado como un viajero del espacio y el tiempo en una realidad donde los múltiples universos son un hecho innegable. 
                 <br> Un universo que ha sido destrozado por el cataclismo <i>lighter-fluid</i>
                 que ha dejado a todo ser viviente en un estado gaseoso, con sus moléculas elementales divididas.
-                En nuestro universo que será llamado <i>known-branch</i> se ha encontrado, gracias a la presente computación cuantica,
+                En nuestro universo que será llamado <i>known-branch</i> se ha encontrado, gracias a la presente computación cuántica,
                 un número sumamente raro derivado de secuencias repetidas de los decimales de pi.
-                Éste número al ser trascrito a hexadecimal a formado la frase <i>"el mejor de los mundos posibles"</i>                   
+                Éste número al ser trascrito a hexadecimal a generado la frase <i>"el mejor de los mundos posibles"</i>                   
               </p>
             </div> <br>
-            <h2 class="letra" style="text-align:left">Definitivamente este componente continuará...</h2>
+            <h3 class="letra" style="text-align:left">Definitivamente este componente continuará...</h3>
           </v-card>
       </v-row>
     </v-container>
@@ -384,5 +382,8 @@ li{
 }
 .color-tarjeta{
   background-image: linear-gradient(160deg, #aa0606, #fcf088);
+}
+.color-tarjeta-github{
+  background-image: linear-gradient(160deg, #f9f7f7, #898484);
 }
 </style>
