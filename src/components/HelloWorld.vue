@@ -17,7 +17,7 @@
         </template>
           
           <h1 class="letra" style="margin:1%">PANGLOSS</h1><br>
-          <span style="font-size:14px;margin-top:1.3%">v0.1.2</span>
+          <span style="font-size:14px;margin-top:1.3%">v0.1.4</span>
           
           <br><br>
       </v-app-bar>
@@ -110,7 +110,7 @@
                               steps : ['uno','','tres'],
                               content: [
                                 {
-                                    text:'Texto contenido del primer paso',
+                                    text:'&lt;i&gt;Texto contenido del primer paso con &lt;br&gt;etiquetas html&lt;/i&gt;&lt;br&gt;&lt;b&gt;para configurar la estructura del texto&lt;b&gt;',
                                     textPosition: 'center',
                                     textSize: '25px',
                                     image:'https://url-de-imagen',
@@ -177,7 +177,7 @@
             <p class="letra1">
               <ul>
                 <li>
-                  text : Contiene el texto a mostrar.
+                  <mark>text :</mark> Contiene el texto a mostrar y <b>soporta etiquetas <i>HTML</i></b> para personalizar a gusto la estructura del texto.
                 </li>
                 <li>
                   textPosition : Responde a la función <i>text-align</i> de css que regula la posición del texto, permitiendo <i>left, center, right</i>.
@@ -317,9 +317,9 @@
           content: [
             {
 
-                text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus cumque saepe, quae, eius architecto accusamus voluptatem dolores velit nisi asperiores perferendis ipsam doloribus. Laborum omnis neque voluptatibus officia ea tempora.',
+                text:'<i>Texto contenido del primer paso con <br> etiquetas html</i><br><b>para configurar la estructura del texto</b>',
                 textPosition: 'left',
-                textSize: '1.1em',
+                textSize: '1.5em',
                 image:'https://firebasestorage.googleapis.com/v0/b/trafla-24d65.appspot.com/o/trafla%2FNew%20Piskel%20(2).gif?alt=media&token=59884834-5748-4d2b-a3b5-040aee3ff30d',
                 imageSize: '50%',
                 btnName: 'conoce trafla',
