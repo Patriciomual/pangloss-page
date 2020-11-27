@@ -111,6 +111,7 @@
                               content: [
                                 {
                                     text:'&lt;i&gt;Texto contenido del primer paso con &lt;br&gt;etiquetas html&lt;/i&gt;&lt;br&gt;&lt;b&gt;para configurar la estructura del texto&lt;b&gt;',
+                                    textColor: 'white',
                                     textPosition: 'center',
                                     textSize: '25px',
                                     image:'https://url-de-imagen',
@@ -122,6 +123,7 @@
                                 },
                                 {
                                     text:'segundo',
+                                    textColor: 'white',
                                     textPosition: 'left',
                                     textSize: '15px',
                                     image: null,
@@ -129,6 +131,7 @@
                                 },
                                 {
                                     text:'tercero',
+                                    textColor: 'white',
                                     textPosition: 'center',
                                     textSize: '15px',
                                     image: null,
@@ -318,6 +321,7 @@
             {
 
                 text:'<i>Texto contenido del primer paso con <br> etiquetas html</i><br><b>para configurar la estructura del texto</b>',
+                textColor: 'white',
                 textPosition: 'left',
                 textSize: '1.5em',
                 image:'https://firebasestorage.googleapis.com/v0/b/trafla-24d65.appspot.com/o/trafla%2FNew%20Piskel%20(2).gif?alt=media&token=59884834-5748-4d2b-a3b5-040aee3ff30d',
@@ -329,6 +333,7 @@
             },
             {
                 text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus cumque saepe, quae, eius architecto accusamus voluptatem dolores velit nisi asperiores perferendis ipsam doloribus. Laborum omnis neque voluptatibus officia ea tempora.',
+                textColor: 'white',
                 textPosition: 'left',
                 textSize: '25px',
                 image: null,
@@ -336,6 +341,7 @@
             },
             {
                 text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus cumque saepe, quae, eius architecto accusamus voluptatem dolores velit nisi asperiores perferendis ipsam doloribus. Laborum omnis neque voluptatibus officia ea tempora.',
+                textColor: 'white',
                 textPosition: 'center',
                 textSize: '25px',
                 image: null,
